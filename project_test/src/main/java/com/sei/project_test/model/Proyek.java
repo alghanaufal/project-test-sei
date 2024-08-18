@@ -3,6 +3,8 @@ package com.sei.project_test.model;
 import lombok.Data;
 
 import jakarta.persistence.*;
+
+import java.sql.Date;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -14,8 +16,8 @@ public class Proyek {
     private Integer id;
     private String namaProyek;
     private String client;
-    private LocalDateTime tglMulai;
-    private LocalDateTime tglSelesai;
+    private Date tglMulai;
+    private Date tglSelesai;
     private String pimpinanProyek;
     private String keterangan;
     private LocalDateTime createdAt;
